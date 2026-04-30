@@ -1,5 +1,5 @@
 name: Backend CI/CD
-
+"Adicionado funções"
 on:
   pull_request_review:
     types: [submitted]
@@ -158,3 +158,4 @@ jobs:
             --body "Merge automático da PR #${{ github.event.pull_request.number }} para a branch main"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
